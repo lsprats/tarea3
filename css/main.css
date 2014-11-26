@@ -122,7 +122,40 @@ h4 {
 }
 
 .back {
-    background: rgba(250,105,0,1);
+    background: #FF777A;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+    .back.no-icon{
+        padding: 0;
+    }
+    .back.no-icon:after{display: none !important;}
+
+.back2{
+    background: #EDEDED;
+    position:relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.back2:after,.back:after{
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    right: 50%;
+    margin-left: -25px;
+    margin-right: -25px;
+    top: -25px;
+    content: "";
+    background: #EDEDED url('../img/network.png') no-repeat center center / 50px 50px;
+}
+
+.back:after{
+    background-color: #FF777A;
 }
 
 /******* Menu*******/
@@ -152,9 +185,9 @@ h4 {
 
 /******* Video*******/
 .colsvideo {
-    background: rgba(243,134,48,1);
     padding: 20px 0;
     margin: 10px 0;
+    color: #fff;
 }
     .colsvideo h4 {
         padding: 10px 0;
@@ -164,10 +197,10 @@ h4 {
 /*******Cols 3*******/
 
 .cols3 {
-    background: rgba(167,219,216,0.4);
     padding: 20px 0;
-    margin: 10px 0;
+    position:relative;
 }
+
 
 .columnas3 {
     background: #fff;
@@ -187,8 +220,7 @@ h4 {
 
 /*******Cols2*******/
 .cols2 {
-    background: rgba(243,134,48,1);
-
+    color: #fff;
 }
 .columnas2 {
     padding: 20px 0;
@@ -207,9 +239,6 @@ h4 {
 
 /*******Citas*******/
 .cita {
-    background: rgba(167,219,216,0.4);
-    margin: 10px 0;
-    padding: 10px 0;
     font-family: 'Indie Flower', cursive;
     font-size: 20px;
 }
@@ -222,15 +251,19 @@ h4 {
 
 .tildeizq {
     text-align: right;
+    color: rgb(255, 119, 122);
 }
 .tildeder {
     text-align: left;
+    color: rgb(255, 119, 122);
 }
 /*******FOOTER********/
 .footer {
     text-align: center;
     padding: 20px 0;
-    background: rgba(105,210,231,0.8);
+}
+.backback {
+    background: #2d2d2d;
 }
 /* fontawesome - icon font citas-frases */
 [class*="fontawesome-"]:before {
