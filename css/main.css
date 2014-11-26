@@ -166,10 +166,11 @@ h4 {
 .nav{
     list-style: none;
     padding-top: 15px;
-    padding-left: 170px;
+    float: right;
 }
     .nav li {
         float: left;
+        margin-left: 0;
     }
         .nav li a{
             text-decoration: none;
@@ -261,6 +262,7 @@ h4 {
 .footer {
     text-align: center;
     padding: 20px 0;
+    color: #FFF;
 }
 .backback {
     background: #2d2d2d;
